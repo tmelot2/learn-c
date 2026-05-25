@@ -28,6 +28,7 @@ int main(void) {
 	char s[100];
 
 	printf("Enter a sentence: ");
+	fflush(stdout);
 	read_line(s, 100);
 	printf("|%s|\n", s);
 	int vowel_count = compute_vowel_count(s);
